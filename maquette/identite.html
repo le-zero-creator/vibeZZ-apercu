@@ -2,44 +2,93 @@
 <html lang="fr"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex,nofollow,noarchive">
-<title>vibeZZ · Identité &amp; Play Store</title>
+<meta name="theme-color" content="#f6f5fb">
+<title>vibeZZ · Icône &amp; Play Store</title>
 <style>
 @font-face { font-family: "Jakarta"; src: url(fonts/jakarta.ttf) format("truetype"); font-weight: 200 800; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: "Jakarta", system-ui, sans-serif; color: #07064a; line-height: 1.5; -webkit-font-smoothing: antialiased;
-  background: radial-gradient(120% 50% at 100% 0%, #fde8fa 0%, rgba(253,232,250,0) 60%), radial-gradient(90% 40% at 0% 0%, #ece8ff 0%, rgba(236,232,255,0) 60%), #f6f5fb; }
-.wrap { max-width: 1100px; margin: 0 auto; padding: 28px 18px 48px; }
+body { font-family: "Jakarta", system-ui, sans-serif; color: #07064a; line-height: 1.5; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: 100%;
+  background: radial-gradient(120% 40% at 100% 0%, #fde8fa 0%, rgba(253,232,250,0) 60%), #f6f5fb; }
+.wrap { max-width: 1180px; margin: 0 auto; padding: 24px 20px 48px; }
 .top { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 18px; }
-.top a { text-decoration: none; font-weight: 700; background: #fff; border-radius: 999px; padding: 8px 14px; color: #07064a; font-size: 15px; box-shadow: 0 1px 2px rgba(18,15,61,.05), 0 12px 30px -8px rgba(18,15,61,.14); }
-h1 { font-size: 30px; font-weight: 800; letter-spacing: -.02em; }
-.sub { color: #57547a; margin: 4px 0 22px; font-size: 16px; }
-.it { background: #fff; border-radius: 22px; padding: 14px; margin-bottom: 18px; box-shadow: 0 1px 2px rgba(18,15,61,.05), 0 12px 30px -8px rgba(18,15,61,.14); }
-.it a.im { display: block; } .it img { width: 100%; display: block; border-radius: 14px; }
-.it h2 { font-size: 19px; font-weight: 800; margin: 12px 6px 2px; }
-.it p { color: #57547a; font-size: 15px; margin: 0 6px 4px; }
-.files { background: #fff; border-radius: 22px; padding: 18px 20px; margin-bottom: 18px; box-shadow: 0 1px 2px rgba(18,15,61,.05), 0 12px 30px -8px rgba(18,15,61,.14); }
-.files h2 { font-size: 19px; font-weight: 800; margin-bottom: 8px; }
-.files ul { list-style: none; } .files li { padding: 7px 0; border-top: 1px solid rgba(18,15,61,.08); font-size: 15px; }
+.top a { text-decoration: none; font-weight: 700; background: #fff; border-radius: 999px; padding: 8px 14px; color: #07064a; font-size: 15px; box-shadow: 0 6px 20px -8px rgba(18,15,61,.25); }
+h1 { font-size: 30px; font-weight: 800; letter-spacing: -.02em; line-height: 1.15; }
+.intro { color: #57547a; margin: 6px 0 4px; font-size: 16px; }
+h2 { font-size: 22px; font-weight: 800; margin: 34px 0 4px; }
+.sub { color: #57547a; font-size: 15px; margin-bottom: 14px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 22px; }
+.grid.caps { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+.one { display: grid; gap: 22px; }
+figure img { width: 100%; display: block; border-radius: 18px; }
+figcaption { font-size: 14.5px; color: #57547a; margin-top: 8px; text-align: center; }
+figcaption b { color: #07064a; }
+.wide img { box-shadow: 0 12px 30px -12px rgba(18,15,61,.3); }
+.files { background: #fff; border-radius: 22px; padding: 18px 20px; margin-top: 30px; box-shadow: 0 12px 30px -10px rgba(18,15,61,.15); }
+.files h2 { margin-top: 0; font-size: 19px; }
+.files ul { list-style: none; } .files li { padding: 8px 0; border-top: 1px solid rgba(18,15,61,.08); font-size: 15px; }
 .files a { color: #c20f97; font-weight: 700; } .files span { color: #8a87a6; }
+.note { font-size: 14px; color: #6b5200; background: #fff8e6; border: 1px solid #ffe2a3; border-radius: 16px; padding: 12px 14px; margin-top: 14px; }
+@media (max-width: 600px) {
+  .wrap { padding: 16px 0 40px; }
+  .top, h1, .intro, h2, .sub, .note { margin-left: 16px; margin-right: 16px; }
+  .grid, .grid.caps, .one { grid-template-columns: 1fr; gap: 26px; }
+  figure img { border-radius: 0; }
+  .wide img { box-shadow: none; }
+  .files { border-radius: 0; }
+}
 </style></head><body><div class="wrap">
-<div class="top"><a href="./">‹ Maquette cliquable</a><a href="../">Accueil de l'aperçu</a></div>
-<h1>Identité &amp; Play Store</h1>
-<p class="sub">L'icône vibeZZ, l'appli sur le téléphone et sa fiche sur le Play Store. Touche une image pour l'ouvrir en grand.</p>
-<div class="it"><a class="im" href="identite/planche-identite.png" target="_blank"><img loading="lazy" src="identite/web/planche-identite.jpg" alt="Planche identité"></a><h2>Planche générale</h2><p>Tout sur une seule image : icône, téléphone, Play Store et captures.</p></div>
-<div class="it"><a class="im" href="identite/01-icone-formes.png" target="_blank"><img loading="lazy" src="identite/web/01-icone-formes.jpg" alt=""></a><h2>1 · L'icône et ses formes</h2><p>L'icône 512 px du Play Store, les formes Android (cercle, squircle, carré arrondi, goutte) et les petites tailles sur fond clair et sombre.</p></div>
-<div class="it"><a class="im" href="identite/02-icone-theme-notification.png" target="_blank"><img loading="lazy" src="identite/web/02-icone-theme-notification.jpg" alt=""></a><h2>2 · Icône à thème et notification</h2><p>La version d'une seule couleur pour Android 13 et plus, et le ZZ blanc de la barre de notifications (propositions).</p></div>
-<div class="it"><a class="im" href="identite/03-ecran-accueil-android.png" target="_blank"><img loading="lazy" src="identite/web/03-ecran-accueil-android.jpg" alt=""></a><h2>3 · vibeZZ sur le téléphone</h2><p>L'écran d'accueil clair et sombre, la liste des applis et l'ouverture de l'appli.</p></div>
-<div class="it"><a class="im" href="identite/04-play-recherche.png" target="_blank"><img loading="lazy" src="identite/web/04-play-recherche.jpg" alt=""></a><h2>4 · Dans la recherche du Play Store</h2><p>Ce que voient les gens qui cherchent « jeux soirée » ou qui tapent le nom.</p></div>
-<div class="it"><a class="im" href="identite/05-play-fiche.png" target="_blank"><img loading="lazy" src="identite/web/05-play-fiche.jpg" alt=""></a><h2>5 · La page vibeZZ sur le Play Store</h2><p>Le haut de la fiche (bandeau, icône, Installer, captures) et la description.</p></div>
-<div class="it"><a class="im" href="identite/07-image-presentation.png" target="_blank"><img loading="lazy" src="identite/web/07-image-presentation.jpg" alt=""></a><h2>6 · Image de présentation 1024 × 500</h2><p>Le bandeau de la fiche, prêt à envoyer.</p></div>
-<div class="it"><a class="im" href="identite/08-captures-play-store.png" target="_blank"><img loading="lazy" src="identite/web/08-captures-play-store.jpg" alt=""></a><h2>7 · Captures d'écran du Play Store</h2><p>6 vraies captures de l'appli avec une phrase courte, en 1080 × 1920.</p></div>
-<div class="it"><a class="im" href="identite/06-avis-icone.png" target="_blank"><img loading="lazy" src="identite/web/06-avis-icone.jpg" alt=""></a><h2>8 · Avis sur l'icône et deux pistes</h2><p>L'icône actuelle à côté de deux propositions : dégradé et néon. L'icône de l'appli n'est pas changée.</p></div>
+<div class="top"><a href="../">‹ Accueil de l'aperçu</a><a href="./">Maquette cliquable</a></div>
+<h1>Icône &amp; Play Store</h1>
+<p class="intro">À quoi ressemblera vibeZZ sur le Play Store et sur un téléphone Android. Touche une image pour l'ouvrir en grand.</p>
+<p class="note">Interface du Play Store imitée d'après de vraies captures ; les autres applis sont inventées. Les chiffres (« Nouveau », « Plus de 100 », 12+, 5 Mo) sont des exemples pour une appli qui vient de sortir.</p>
+<h2>Sur le Play Store</h2><p class="sub">L'accueil, la recherche, la fiche de l'appli et sa description.</p>
+<div class="grid">
+<figure><a href="identite/web/tel-play-accueil.jpg" target="_blank"><img loading="lazy" src="identite/web/tel-play-accueil.jpg" alt="Accueil du Play Store"></a><figcaption><b>Accueil du Play Store</b> · vibeZZ mise en avant</figcaption></figure>
+<figure><a href="identite/web/tel-play-recherche.jpg" target="_blank"><img loading="lazy" src="identite/web/tel-play-recherche.jpg" alt="Recherche « jeux soirée »"></a><figcaption><b>Recherche « jeux soirée »</b> · vibeZZ dans les résultats</figcaption></figure>
+<figure><a href="identite/web/tel-play-fiche.jpg" target="_blank"><img loading="lazy" src="identite/web/tel-play-fiche.jpg" alt="La fiche vibeZZ"></a><figcaption><b>La fiche vibeZZ</b> · icône, Installer, captures</figcaption></figure>
+<figure><a href="identite/web/tel-play-apropos.jpg" target="_blank"><img loading="lazy" src="identite/web/tel-play-apropos.jpg" alt="À propos de l'appli"></a><figcaption><b>À propos de l'appli</b> · la description complète</figcaption></figure>
+<figure><a href="identite/web/tel-play-saisie.jpg" target="_blank"><img loading="lazy" src="identite/web/tel-play-saisie.jpg" alt="On tape « vibe »"></a><figcaption><b>On tape « vibe »</b> · l'appli sort en premier</figcaption></figure>
+</div>
+<h2>Les captures de la fiche</h2><p class="sub">6 vraies captures de l'appli avec une phrase courte, prêtes à envoyer (1080 × 1920).</p>
+<div class="grid caps">
+<figure><a href="identite/play-store/capture-1-choisis-ta-soiree.png" target="_blank"><img loading="lazy" src="identite/web/capture-1-choisis-ta-soiree.jpg" alt="1. Choisis ta soirée"></a><figcaption><b>1. Choisis ta soirée</b></figcaption></figure>
+<figure><a href="identite/play-store/capture-2-40-jeux-adaptes.png" target="_blank"><img loading="lazy" src="identite/web/capture-2-40-jeux-adaptes.jpg" alt="2. 40 jeux adaptés"></a><figcaption><b>2. 40 jeux adaptés</b></figcaption></figure>
+<figure><a href="identite/play-store/capture-3-chaque-jeu-explique.png" target="_blank"><img loading="lazy" src="identite/web/capture-3-chaque-jeu-explique.jpg" alt="3. Chaque jeu expliqué"></a><figcaption><b>3. Chaque jeu expliqué</b></figcaption></figure>
+<figure><a href="identite/play-store/capture-4-le-deroule.png" target="_blank"><img loading="lazy" src="identite/web/capture-4-le-deroule.jpg" alt="4. Le déroulé de ta soirée"></a><figcaption><b>4. Le déroulé de ta soirée</b></figcaption></figure>
+<figure><a href="identite/play-store/capture-5-un-seul-telephone.png" target="_blank"><img loading="lazy" src="identite/web/capture-5-un-seul-telephone.jpg" alt="5. Un seul téléphone"></a><figcaption><b>5. Un seul téléphone</b></figcaption></figure>
+<figure><a href="identite/play-store/capture-6-mode-sombre.png" target="_blank"><img loading="lazy" src="identite/web/capture-6-mode-sombre.jpg" alt="6. Mode sombre inclus"></a><figcaption><b>6. Mode sombre inclus</b></figcaption></figure>
+</div>
+<h2>L'image de présentation</h2><p class="sub">Le bandeau 1024 × 500 que Google utilise pour mettre l'appli en avant.</p>
+<div class="one wide"><figure><a href="identite/play-store/feature-graphic-1024x500.png" target="_blank"><img loading="lazy" src="identite/web/feature-graphic.jpg" alt="Image de présentation"></a><figcaption><b>Image de présentation</b> · 1024 × 500</figcaption></figure>
+</div>
+<h2>Sur le téléphone</h2><p class="sub">L'icône et son nom au milieu d'applis ordinaires, puis l'ouverture.</p>
+<div class="grid">
+<figure><a href="identite/web/tel-accueil-clair.jpg" target="_blank"><img loading="lazy" src="identite/web/tel-accueil-clair.jpg" alt="Écran d'accueil clair"></a><figcaption><b>Écran d'accueil clair</b> · style Pixel</figcaption></figure>
+<figure><a href="identite/web/tel-accueil-sombre.jpg" target="_blank"><img loading="lazy" src="identite/web/tel-accueil-sombre.jpg" alt="Écran d'accueil sombre"></a><figcaption><b>Écran d'accueil sombre</b> · style Samsung</figcaption></figure>
+<figure><a href="identite/web/tel-tiroir.jpg" target="_blank"><img loading="lazy" src="identite/web/tel-tiroir.jpg" alt="Liste des applis"></a><figcaption><b>Liste des applis</b> · ordre alphabétique</figcaption></figure>
+<figure><a href="identite/web/tel-ouverture.jpg" target="_blank"><img loading="lazy" src="identite/web/tel-ouverture.jpg" alt="Ouverture de l'appli"></a><figcaption><b>Ouverture de l'appli</b> · bleu nuit + ZZ</figcaption></figure>
+</div>
+<h2>L'icône</h2><p class="sub">Les formes Android, les petites tailles, l'icône à thème, la notification, et l'avis avec deux pistes (l'icône de l'appli n'est pas changée).</p>
+<div class="one wide">
+<figure><a href="identite/01-icone-formes.png" target="_blank"><img loading="lazy" src="identite/web/01-icone-formes.jpg" alt="L'icône et ses formes"></a><figcaption><b>L'icône et ses formes</b></figcaption></figure>
+<figure><a href="identite/02-icone-theme-notification.png" target="_blank"><img loading="lazy" src="identite/web/02-icone-theme-notification.jpg" alt="Icône à thème et notification"></a><figcaption><b>Icône à thème et notification</b></figcaption></figure>
+<figure><a href="identite/06-avis-icone.png" target="_blank"><img loading="lazy" src="identite/web/06-avis-icone.jpg" alt="Avis sur l'icône et deux pistes"></a><figcaption><b>Avis sur l'icône et deux pistes</b></figcaption></figure>
+</div>
+<h2>Toutes les planches</h2><p class="sub">Les mêmes images en grand format, pour les graphistes (aussi dans le PDF de la maquette).</p>
+<div class="one wide">
+<figure><a href="identite/planche-identite.png" target="_blank"><img loading="lazy" src="identite/web/planche-identite.jpg" alt="Planche générale"></a><figcaption><b>Planche générale</b></figcaption></figure>
+<figure><a href="identite/03-ecran-accueil-android.png" target="_blank"><img loading="lazy" src="identite/web/03-ecran-accueil-android.jpg" alt="vibeZZ sur le téléphone"></a><figcaption><b>vibeZZ sur le téléphone</b></figcaption></figure>
+<figure><a href="identite/04-play-recherche.png" target="_blank"><img loading="lazy" src="identite/web/04-play-recherche.jpg" alt="Play Store : accueil, recherche, saisie"></a><figcaption><b>Play Store : accueil, recherche, saisie</b></figcaption></figure>
+<figure><a href="identite/05-play-fiche.png" target="_blank"><img loading="lazy" src="identite/web/05-play-fiche.jpg" alt="Play Store : la fiche"></a><figcaption><b>Play Store : la fiche</b></figcaption></figure>
+<figure><a href="identite/07-image-presentation.png" target="_blank"><img loading="lazy" src="identite/web/07-image-presentation.jpg" alt="Image de présentation"></a><figcaption><b>Image de présentation</b></figcaption></figure>
+<figure><a href="identite/08-captures-play-store.png" target="_blank"><img loading="lazy" src="identite/web/08-captures-play-store.jpg" alt="Captures Play Store"></a><figcaption><b>Captures Play Store</b></figcaption></figure>
+</div>
 <div class="files"><h2>Fichiers prêts pour le Play Store</h2><ul>
 <li><a href="identite/play-store/icon-512.png" download>icon-512.png</a> <span>· icône 512 × 512</span></li>
 <li><a href="identite/play-store/feature-graphic-1024x500.png" download>feature-graphic-1024x500.png</a> <span>· image de présentation</span></li>
-<li><a href="identite/play-store/capture-1-choisis-ta-soiree.png" download>capture-1</a>, <a href="identite/play-store/capture-2-40-jeux-adaptes.png" download>2</a>, <a href="identite/play-store/capture-3-chaque-jeu-explique.png" download>3</a>, <a href="identite/play-store/capture-4-le-deroule.png" download>4</a>, <a href="identite/play-store/capture-5-un-seul-telephone.png" download>5</a>, <a href="identite/play-store/capture-6-mode-sombre.png" download>6</a> <span>· captures 1080 × 1920</span></li>
+<li><a href="identite/play-store/capture-1-choisis-ta-soiree.png" download>capture 1</a>, <a href="identite/play-store/capture-2-40-jeux-adaptes.png" download>capture 2</a>, <a href="identite/play-store/capture-3-chaque-jeu-explique.png" download>capture 3</a>, <a href="identite/play-store/capture-4-le-deroule.png" download>capture 4</a>, <a href="identite/play-store/capture-5-un-seul-telephone.png" download>capture 5</a>, <a href="identite/play-store/capture-6-mode-sombre.png" download>capture 6</a> <span>· 1080 × 1920</span></li>
 <li><a href="identite/play-store/fiche-play-store.md" target="_blank">fiche-play-store.md</a> <span>· nom, descriptions, catégorie, mots-clés</span></li>
-<li><a href="identite/avis-icone.md" target="_blank">avis-icone.md</a> <span>· l'avis sur l'icône en texte</span></li>
-<li><a href="identite/variantes/icone-variante-A-degrade-512.png" download>Piste A</a> et <a href="identite/variantes/icone-variante-B-neon-512.png" download>piste B</a> <span>· les deux propositions d'icône en 512 px</span></li>
+<li><a href="identite/avis-icone.md" target="_blank">avis-icone.md</a> <span>· l'avis sur l'icône</span></li>
+<li><a href="identite/variantes/icone-variante-A-degrade-512.png" download>Piste A</a> et <a href="identite/variantes/icone-variante-B-neon-512.png" download>piste B</a> <span>· propositions d'icône en 512 px</span></li>
 </ul></div>
 </div></body></html>
