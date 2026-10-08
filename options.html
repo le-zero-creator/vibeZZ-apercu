@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" type="image/png" href="icone-zz.png">
+<link rel="apple-touch-icon" href="icone-zz.png">
+<title>vibeZZ · où sont les options</title>
+<style>
+@font-face { font-family: "Jakarta"; src: url(fonts/jakarta.ttf) format("truetype"); font-weight: 200 800; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+:root { --navy:#07064a; --mag:#ff2bd6; --mag-d:#c20f97; --bg:#f6f5fb; --card:#fff; --t2:#57547a; --t3:#8a87a6; --line:rgba(18,15,61,.08);
+  --shadow: 0 1px 2px rgba(18,15,61,.05), 0 12px 30px -8px rgba(18,15,61,.14); }
+html { -webkit-text-size-adjust: 100%; }
+body { font-family: "Jakarta", system-ui, -apple-system, Segoe UI, Roboto, sans-serif; color: var(--navy); line-height: 1.5;
+  background: radial-gradient(120% 50% at 100% 0%, #fde8fa 0%, rgba(253,232,250,0) 60%), radial-gradient(90% 40% at 0% 0%, #ece8ff 0%, rgba(236,232,255,0) 60%), var(--bg);
+  min-height: 100vh; -webkit-font-smoothing: antialiased; }
+.wrap { max-width: 680px; margin: 0 auto; padding: 28px 18px 48px; }
+a { color: var(--mag-d); }
+.top { display:flex; align-items:center; gap:12px; margin-bottom: 18px; }
+.top a.back { text-decoration:none; font-weight:700; background:#fff; border-radius:999px; padding:8px 14px; box-shadow:var(--shadow); color:var(--navy); font-size:15px; }
+.foot { text-align:center; color: var(--t3); font-size: 13px; margin-top: 30px; }
+
+.doc { background:#fff; border-radius: 22px; padding: 22px 20px; box-shadow: var(--shadow); font-size: 16px; color: #2a2760; }
+.doc h1 { font-size: 24px; line-height:1.25; color: var(--navy); margin-bottom: 12px; }
+.doc h2 { font-size: 19px; color: var(--navy); margin: 26px 0 10px; padding-top: 16px; border-top: 1px solid var(--line); }
+.doc h3 { font-size: 17px; margin: 18px 0 8px; color: var(--navy); }
+.doc p { margin: 10px 0; }
+.doc ul, .doc ol { padding-left: 20px; margin: 8px 0; }
+.doc li { margin: 6px 0; }
+.doc li strong:first-child { color: var(--mag-d); }
+.doc code { background: #f1effa; padding: 1px 6px; border-radius: 6px; font-size: .92em; }
+.doc table { border-collapse: collapse; width: 100%; font-size: 14px; display:block; overflow-x:auto; }
+.doc th, .doc td { border: 1px solid var(--line); padding: 6px 8px; text-align:left; }
+
+</style></head><body><div class="wrap">
+<div class="top"><a class="back" href="./">‹ Accueil</a></div><div class="doc"><h1>vibeZZ · maquette : où sont passées les options ?</h1>
+<p>C'est une <strong>maquette</strong>, pas encore l'appli. Rien n'a été modifié dans l'appli, ni sur ton PC, ni sur GitHub.</p>
+<ul>
+<li>Planches : <a href="maquette/planche-clair.png">planche claire</a> (10 écrans) et <a href="maquette/planche-sombre.png">planche sombre</a> (4 écrans en mode nuit)</li>
+<li>Écrans un par un : <a href="ecrans.html">page des écrans</a></li>
+<li>Version cliquable : <a href="maquette/">ouvre la maquette cliquable</a> (onglets, lune/soleil, cœurs, fiche jeu, Pass et Réglages réagissent)</li>
+</ul>
+<p><strong>Bilan : sur les 93 options de l'inventaire, 93 restent dans l'app.</strong> Seuls 5 boutons en double sont retirés (liste en bas). Leur fonction existe toujours ailleurs.</p>
+<p><strong>Pas encore dessinés</strong> (décrits ci-dessous, mais sans écran dans la maquette) : les feuilles Format, Filtres de Jeux, Jeu maison, Ajouter au déroulé, Réorganiser, la note de première utilisation, la confirmation 18+, le Pass déjà actif, et l'écran de partie. Ils reprendront le même style.</p>
+<p>Légende des nouveaux emplacements :
+- <strong>Barre du haut</strong> (sur chaque onglet) : logo · bouton lune/soleil (thème) · bouton PASS doré · ⚙ Réglages
+- <strong>Barre d'onglets</strong> (en bas) : Accueil · Jeux · Cérémonie · Musique · Ambiance
+- <strong>Feuille</strong> = fenêtre qui monte du bas. On la ferme avec ✕, en la glissant vers le bas ou en touchant le fond.</p>
+<h2>A. Global</h2>
+<ul>
+<li><strong>A1</strong> Logo : barre du haut, à gauche, sur chaque onglet. Version claire (VIBE bleu nuit) et sombre (VIBE blanc).</li>
+<li><strong>A2</strong> Bouton Pass : barre du haut, pilule dorée « PASS » (quand le Pass est actif : « Soirée · 24 h »). Aussi dans la carte Pass en bas de l'Accueil, dans Réglages → Pass, et sur les jeux verrouillés (badge doré « PASS »).</li>
+<li><strong>A3</strong> Barre d'onglets : en bas, en verre dépoli, avec de grandes icônes. Mêmes 5 onglets. L'onglet actif est en magenta avec un petit trait au-dessus. Cachée pendant une partie.</li>
+<li><strong>A4</strong> Messages éphémères : petite bulle bleu nuit au-dessus des onglets (ex. « Ajouté aux favoris »).</li>
+<li><strong>A5</strong> Touche Échap : inchangée.</li>
+<li><strong>A6</strong> Panneau grand écran : inchangé (il ne s'affiche que sur ordinateur, donc il n'est pas dans la maquette téléphone).</li>
+<li><strong>A7</strong> Sauvegarde automatique : inchangée. Le thème choisi (clair ou sombre) sera sauvegardé en plus.</li>
+<li><strong>A8</strong> Expiration du Pass : inchangée.</li>
+<li><strong>A9</strong> Fermer une fenêtre : le bouton « Fermer » devient un ✕ rond. Le fond sombre ferme toujours, et on peut aussi glisser la feuille vers le bas.</li>
+</ul>
+<h2>B. Écran d'ouverture</h2>
+<ul>
+<li><strong>B1</strong> Logo + question + phrase : en haut, « Tu organises quoi ? » + « Choisis : vibeZZ prépare les jeux et le déroulé ». Les 3 étapes sont retirées, voir la liste en bas.</li>
+<li><strong>B2</strong> 3 grandes cartes : 3 grandes cartes illustrées (Soirée, Pique-nique, Rencontre entre jeunes) avec le nombre de jeux et la description. En dessous : « Autres formats » avec 2 cartes, Pyjama et Anniversaire.</li>
+<li><strong>B3</strong> Toucher une carte : inchangé (format choisi, déroulé reconstruit, puis Accueil). « ‹ Revenir à ma soirée en cours » reste en haut quand une soirée existe déjà.</li>
+</ul>
+<h2>C. Accueil</h2>
+<ul>
+<li><strong>C1</strong> Note de première utilisation + « Compris » : petite feuille affichée une seule fois, à la première arrivée sur l'Accueil. Elle n'est plus collée en haut de l'écran.</li>
+<li><strong>C2</strong> Ton actuel : Réglages → « Ton du contenu » (4 cartes, celle choisie est entourée). Aussi dans Jeux → bouton filtres.</li>
+<li><strong>C3</strong> Heure de début → fin : Accueil, pastille « 🕗 20:00 → 23:30 » sous le titre.</li>
+<li><strong>C4</strong> Nom modifiable : Accueil, grand titre (le toucher pour renommer). Aussi dans Réglages → Nom.</li>
+<li><strong>C5</strong> Les 5 formats + nouveau déroulé : Accueil → pastille « ● Soirée ⌄ » → feuille Format (5 formats, puis « Nouveau déroulé » ou « Garder mon déroulé »).</li>
+<li><strong>C6</strong> Profil / Réglages : bouton ⚙ dans la barre du haut, sur tous les onglets (avant, il n'était que sur l'Accueil).</li>
+<li><strong>C7</strong> Pilote allumé / éteint : Réglages → « Pilote automatique » (interrupteur).</li>
+<li><strong>C8</strong> Frise des moments : Accueil → section « Le déroulé » (cartes qui défilent de côté, toucher = aller au moment) + « Modifier › » vers Cérémonie.</li>
+<li><strong>C9</strong> Carte « Maintenant » : grande carte dégradée magenta → violet : « MAINTENANT · 4/8 », temps restant, image du jeu, titre, type, barre de progression.</li>
+<li><strong>C10</strong> Ouvrir le jeu : carte Maintenant → gros bouton blanc « ▶ Jouer ».</li>
+<li><strong>C11</strong> Précédent : carte Maintenant → bouton rond ⏮.</li>
+<li><strong>C12</strong> Pause / Reprendre : carte Maintenant → bouton rond ⏸ / ▶.</li>
+<li><strong>C13</strong> Suivant : carte Maintenant → bouton rond ⏭.</li>
+<li><strong>C14</strong> « vibeZZ propose » : carte juste sous Maintenant (icône baguette magique), quand le Pilote est allumé.</li>
+<li><strong>C15</strong> Retard + « Réorganiser » : bandeau dans la carte Maintenant (à la place de « 9 min restantes ») qui affiche « Retard de X min · Réorganiser ».</li>
+<li><strong>C16</strong> Déroulé terminé : la carte Maintenant affiche « Le déroulé est terminé » + « Nouvelle soirée » (ouvre directement la confirmation).</li>
+<li><strong>C17</strong> Énergie : Accueil → carte « Énergie de la salle » (pourcentage, jauge en dégradé, phrase).</li>
+<li><strong>C18</strong> Relancer l'ambiance : carte Énergie → bouton « ↻ Relancer » (va vers Ambiance).</li>
+<li><strong>C19</strong> Son en cours : mini-lecteur flottant en bas de l'Accueil (« Son en cours · Présent, mais discret », avec un petit égaliseur animé). Le toucher ouvre Musique.</li>
+<li><strong>C20</strong> Bannière Pass Soirée : en bas de l'Accueil, carte bleu nuit avec couronne dorée : « Pass Soirée · 1 500 FCFA · Les 40 jeux pendant 24 h » + « Voir ».</li>
+</ul>
+<h2>D. Jeux</h2>
+<ul>
+<li><strong>D1</strong> Changer de format : Jeux → bouton filtres (icône réglages dans la barre de recherche) → « Format : Soirée · Changer ». Aussi via la pastille de format de l'Accueil. « Revoir l'écran de départ » est dans Réglages → Plus.</li>
+<li><strong>D2</strong> Jeu maison : Jeux, en haut à droite, « + Jeu maison ». Aussi dans Réglages → Plus.</li>
+<li><strong>D3</strong> Filtre format / tous : Jeux, sélecteur « Pour ma soirée · 23 | Tous les jeux · 40 ».</li>
+<li><strong>D4</strong> Recherche : Jeux, grande barre « Chercher un jeu ».</li>
+<li><strong>D5</strong> Familles : Jeux, rangée de pastilles qui défile (Tout, Fou rire, Groupe, Deviner, Défis, Musique, Mime, Adresse…).</li>
+<li><strong>D6</strong> Favoris : Jeux, première pastille « ♥ Favoris · 4 ». <strong>Nouveau :</strong> un cœur sur chaque carte de jeu (un toucher = favori), et une rangée « Tes favoris » sur l'Accueil.</li>
+<li><strong>D7</strong> Filtre ton : Jeux → bouton filtres → « Ton : Classique / Tous les tons » (un point magenta sur le bouton signale un filtre actif).</li>
+<li><strong>D8</strong> « Aucun jeu pour ce filtre » : inchangé, avec « Effacer la recherche » et « Voir tous les jeux ».</li>
+<li><strong>D9</strong> Carte de jeu : grande image illustrée, cœur, badge doré « PASS » si verrouillé, nom, 👥 joueurs, ⏱ durée. Toucher la carte = fiche. Le bouton « ? » est retiré, voir la liste en bas. La phrase de description est passée dans la fiche.</li>
+<li><strong>D10</strong> Fiche jeu : feuille avec une grande image en haut, ✕ (retour), ♥ favori, « Gratuit » ou « Pass », famille, nom, phrase, 4 cases (joueurs, durée, matériel, énergie en points), « Pour quels formats », « Comment jouer » en étapes numérotées (« Voir les 8 étapes »).</li>
+<li><strong>D11</strong> Démarrer : fiche, gros bouton dégradé collé en bas, « ▶ Jouer » (« 👑 Voir le Pass » si le jeu est verrouillé).</li>
+<li><strong>D12</strong> Ajouter à la soirée : fiche, bouton à côté, « + À la soirée ».</li>
+</ul>
+<h2>E. Cérémonie</h2>
+<ul>
+<li><strong>E1</strong> Titres : « MAÎTRE DE CÉRÉMONIE » / « Cérémonie » / « Le déroulé t'appartient : déplace, allonge, coupe. »</li>
+<li><strong>E2</strong> Ajouter : gros bouton dégradé « + Ajouter ».</li>
+<li><strong>E3</strong> Copier : bouton « WhatsApp » (copie le déroulé en texte).</li>
+<li><strong>E4</strong> Heure, type, titre de chaque moment : liste avec l'heure à gauche, une étiquette de couleur douce par type, le titre et la durée. Le résumé Début, Fin, Moments, Durée est dans une carte en haut, et « Changer l'heure de début › » en bas.</li>
+<li><strong>E5</strong> Monter / Descendre : boutons ↑ ↓ sur le moment en cours. Pour les autres : bouton ⋯ → « Monter » / « Descendre ».</li>
+<li><strong>E6</strong> −5 / +5 min : compteur « − 15 min + » sur le moment en cours. Pour les autres : ⋯ → « Durée : −5 / +5 min ».</li>
+<li><strong>E7</strong> Lancer / En cours / Passer ici : étiquette « EN COURS » + bouton « ▶ Lancer » sur le moment en cours. Pour les autres : ⋯ → « Passer ici maintenant ».</li>
+<li><strong>E8</strong> Retirer : ⋯ → « Retirer du déroulé » (en rouge).</li>
+</ul>
+<h2>F. Musique</h2>
+<ul>
+<li><strong>F1</strong> « Bientôt » + explication : la phrase « vibeZZ ne lance pas les morceaux… » est sous le titre. La carte « Bientôt » (pointillés) est en bas de l'onglet.</li>
+<li><strong>F2</strong> Sons par moment : grande carte bleu nuit « MAINTENANT » (le son conseillé, quoi chercher, « ✓ C'est ce qui passe »), puis la liste « Chaque moment, son ambiance » (image, titre, moment + quoi chercher, « Mettre ça »).</li>
+</ul>
+<h2>G. Ambiance</h2>
+<ul>
+<li><strong>G1</strong> 4 humeurs : 4 grandes tuiles (Ça casse, Ça baisse, Ça tient, Ça monte), chacune avec une icône et une couleur. La tuile choisie est entourée et cochée.</li>
+<li><strong>G2</strong> 3 jeux proposés : liste « Lance un de ces jeux » (image, nom, durée · famille, bouton « ▶ Jouer » ou « 👑 Jouer » si verrouillé). L'énergie est affichée à droite du titre.</li>
+<li><strong>G3</strong> Règles : bouton ⓘ sur chaque jeu, qui déplie les règles en dessous.</li>
+</ul>
+<h2>H. Fenêtres</h2>
+<ul>
+<li><strong>H1</strong> Nom : Réglages → Ta soirée → Nom.</li>
+<li><strong>H2</strong> Heure de début : Réglages → Ta soirée → Heure de début. Aussi dans Cérémonie → « Changer l'heure de début ».</li>
+<li><strong>H3</strong> Format sans reconstruire : Réglages → Format → feuille Format → « Garder mon déroulé, changer juste le format ».</li>
+<li><strong>H4</strong> Ton Classique, Soft, 18+, Foi : Réglages → « Ton du contenu », 4 cartes avec une phrase chacune.</li>
+<li><strong>H5</strong> Confirmation 18+ : la carte 18+ porte l'étiquette « Confirmation ». La toucher ouvre « Je confirme » / « Retour ».</li>
+<li><strong>H6</strong> Nouvelle soirée + confirmation : Réglages → Plus → « Nouvelle soirée, calée sur maintenant » (en rouge), avec confirmation.</li>
+<li><strong>H7</strong> Pass, explication, simulation, « déjà ouvert » : feuille Pass, en-tête « vibeZZ Pass · Les 40 jeux, sans limite », « Paiement simulé » en bas. « Un pass est déjà ouvert » s'affiche à la place des formules quand un Pass est actif.</li>
+<li><strong>H8</strong> Encadré Gratuit : feuille Pass, comparaison côte à côte « Gratuit » / « Avec le Pass ».</li>
+<li><strong>H9</strong> 4 formules : « 1 · Choisis ta formule » : Pass Soirée 1 500 FCFA / 24 h (étiquette « LE PLUS PRIS »), Classique 3 000 / 7 j, Max 5 000 / 30 j, Élite 15 000 / 30 j.</li>
+<li><strong>H10</strong> Numéro Mobile Money + erreur : « 2 · Ton numéro Mobile Money », champ avec le préfixe +237. Le message d'erreur s'affiche sous le champ.</li>
+<li><strong>H11</strong> MTN MoMo / Orange Money : « 3 · Paie 1 500 FCFA », deux gros boutons aux couleurs MTN (jaune) et Orange (orange).</li>
+<li><strong>H12</strong> Les 6 moments à ajouter : Cérémonie → « + Ajouter » → feuille (les 6 moments en tuiles avec icône).</li>
+<li><strong>H13</strong> Recherche d'un jeu : même feuille, « …ou cherche un jeu », avec l'image de chaque jeu.</li>
+<li><strong>H14</strong> Jeu maison, nom, joueurs, minutes, matériel : Jeux → « + Jeu maison » → feuille.</li>
+<li><strong>H15</strong> Énergie 1 / 2 / 3 : même feuille.</li>
+<li><strong>H16</strong> Formats + avertissement : même feuille.</li>
+<li><strong>H17</strong> Règles + Enregistrer : même feuille, bouton « Enregistrer » collé en bas.</li>
+<li><strong>H18</strong> Réorganiser : Accueil → bandeau Retard → « Réorganiser » → feuille. Inchangé (Pass requis).</li>
+</ul>
+<h2>I. Écran de partie</h2>
+<p>Il n'est <strong>pas redessiné dans cette maquette</strong> : son fonctionnement ne change pas. Après ta validation, il reprendra le même style (thème clair et sombre, gros boutons, ✕ en haut à gauche, « ? Règles » en haut à droite).
+- <strong>I1</strong> Fermer, Règles, famille · ton, titre : inchangé (✕ rond + « ? Règles »).
+- <strong>I2</strong> Mode chrono : inchangé.
+- <strong>I3</strong> Danse / Stop : inchangé.
+- <strong>I4</strong> Mode guide : inchangé.
+- <strong>I5</strong> Mode quiz : inchangé.
+- <strong>I6</strong> Gauche / droite : inchangé.
+- <strong>I7</strong> Mode cartes : inchangé.
+- <strong>I8</strong> Mode mots : inchangé.
+- <strong>I9</strong> Undercover, réglages et distribution : inchangé.
+- <strong>I10</strong> Undercover, élimination et fin : inchangé.
+- <strong>I11</strong> Deviner sur photo : inchangé.</p>
+<h2>J. Contenu et règles</h2>
+<ul>
+<li><strong>J1</strong> 40 jeux, un fichier par jeu : inchangé. <strong>Nouveau :</strong> chaque jeu a sa propre image (les 40 sont dessinées dans la maquette).</li>
+<li><strong>J2</strong> 5 formats + filtrage : inchangé.</li>
+<li><strong>J3</strong> 4 tons : inchangé (choix dans Réglages).</li>
+<li><strong>J4</strong> Jeux verrouillés sans Pass : inchangé, avec un badge doré « 👑 PASS » sur l'image.</li>
+<li><strong>J5</strong> Jeux maison : inchangé.</li>
+<li><strong>J6</strong> Favoris : cœur sur chaque carte et sur la fiche, pastille « ♥ Favoris » dans Jeux, rangée « Tes favoris » sur l'Accueil.</li>
+<li><strong>J7</strong> Déroulés types : inchangé.</li>
+</ul>
+<h2>Nouveautés</h2>
+<ul>
+<li><strong>Thème Clair / Sombre / Auto</strong> : clair par défaut. Bouton lune/soleil dans la barre du haut de chaque onglet, et choix à 3 aperçus dans Réglages → Apparence.</li>
+<li><strong>Images de jeux</strong> : une illustration par jeu, dans le même style (dégradés, motif wax discret, confettis), sans aucune personne réelle.</li>
+<li><strong>Menu ⋯</strong> sur chaque moment de la Cérémonie : il range Monter, Descendre, Durée, Passer ici et Retirer.</li>
+<li><strong>Mini-lecteur « Son en cours »</strong> en bas de l'Accueil.</li>
+</ul>
+<h2>Retirés ou fusionnés (doublons uniquement)</h2>
+<ol>
+<li><strong>Le bouton « ? » sur les cartes de jeu</strong> : il faisait exactement la même chose que toucher la carte (ouvrir la fiche). Toucher la carte suffit.</li>
+<li><strong>Les 3 étapes « 1 Choisis · 2 Ta soirée est prête · 3 Joue » de l'écran d'ouverture</strong> : elles répétaient la note de première utilisation de l'Accueil. Elles sont remplacées par une seule phrase sous le titre.</li>
+<li><strong>Le bouton « ⚙ Réglages » dans la carte de l'Accueil</strong> : il est remplacé par le ⚙ de la barre du haut, présent sur tous les onglets, donc plus facile à trouver.</li>
+<li><strong>Le lien « Changer » à côté du filtre dans Jeux</strong> : il ouvrait la même fenêtre Format que la pastille de l'Accueil et que Réglages → Format. Il est rangé dans le bouton filtres de Jeux.</li>
+<li><strong>Le détour de « Ouvrir une autre soirée »</strong> (fin du déroulé → Réglages → Nouvelle soirée) : le bouton propose directement « Nouvelle soirée », avec la même confirmation.</li>
+</ol>
+<p>Déplacés pour alléger l'écran, mais toujours là : la pastille Ton et l'interrupteur Pilote (de l'Accueil vers Réglages), le filtre Ton (de la rangée de Jeux vers le bouton filtres), les boutons ↑ ↓ −5 +5 Passer ici Retirer des moments qui ne sont pas en cours (vers le menu ⋯), et la phrase de chaque carte de jeu (vers la fiche).</p>
+<h2>Idées reprises des applis concurrentes</h2>
+<ul>
+<li><strong>Picolo</strong> : le parcours en un seul choix (on choisit un mode sur une grande carte colorée, puis on joue). Repris pour les 3 grandes cartes illustrées de l'ouverture.</li>
+<li><strong>TOZ</strong> : les jeux présentés comme une galerie de grandes cartes, et des « modes » d'ambiance (soft / fun / hot). Repris pour la grille d'images de Jeux et les 4 cartes de ton dans Réglages.</li>
+<li><strong>Traknard</strong> : chaque jeu a sa propre fiche avec ses règles complètes et ses modes. Repris pour la fiche jeu (image, cases joueurs / durée / matériel, étapes numérotées).</li>
+<li><strong>Sombre Soirée</strong> : on lance un jeu en un geste depuis sa tuile, dans un univers sombre et coloré. Repris pour le bouton « Jouer » mis en avant partout (Accueil, fiche, Ambiance) et pour le thème sombre.</li>
+<li><strong>Bobby, Bunker</strong> : je n'ai pas trouvé assez d'infos fiables sur leurs écrans. Je ne leur attribue donc rien.</li>
+<li><strong>Conventions d'apps connues</strong> (pas des concurrents) : la barre d'onglets en verre et les feuilles qui montent du bas (iOS / Android), le mini-lecteur « Son en cours » (comme Spotify), et les réglages groupés en cartes.</li>
+</ul></div><p class="foot">Dernière mise à jour : 8 octobre 2026 à 11:34 (heure de Douala)<br>Lien privé : merci de ne pas le partager publiquement.</p></div></body></html>

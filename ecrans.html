@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" type="image/png" href="icone-zz.png">
+<link rel="apple-touch-icon" href="icone-zz.png">
+<title>vibeZZ · tous les écrans</title>
+<style>
+@font-face { font-family: "Jakarta"; src: url(fonts/jakarta.ttf) format("truetype"); font-weight: 200 800; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+:root { --navy:#07064a; --mag:#ff2bd6; --mag-d:#c20f97; --bg:#f6f5fb; --card:#fff; --t2:#57547a; --t3:#8a87a6; --line:rgba(18,15,61,.08);
+  --shadow: 0 1px 2px rgba(18,15,61,.05), 0 12px 30px -8px rgba(18,15,61,.14); }
+html { -webkit-text-size-adjust: 100%; }
+body { font-family: "Jakarta", system-ui, -apple-system, Segoe UI, Roboto, sans-serif; color: var(--navy); line-height: 1.5;
+  background: radial-gradient(120% 50% at 100% 0%, #fde8fa 0%, rgba(253,232,250,0) 60%), radial-gradient(90% 40% at 0% 0%, #ece8ff 0%, rgba(236,232,255,0) 60%), var(--bg);
+  min-height: 100vh; -webkit-font-smoothing: antialiased; }
+.wrap { max-width: 680px; margin: 0 auto; padding: 28px 18px 48px; }
+a { color: var(--mag-d); }
+.top { display:flex; align-items:center; gap:12px; margin-bottom: 18px; }
+.top a.back { text-decoration:none; font-weight:700; background:#fff; border-radius:999px; padding:8px 14px; box-shadow:var(--shadow); color:var(--navy); font-size:15px; }
+.foot { text-align:center; color: var(--t3); font-size: 13px; margin-top: 30px; }
+
+h1 { font-size: 26px; font-weight: 800; letter-spacing: -.01em; }
+.sub { color: var(--t2); margin: 4px 0 18px; }
+h2 { font-size: 18px; font-weight: 800; margin: 26px 0 12px; }
+.planche { display:block; background:#fff; border-radius: 18px; padding: 8px; box-shadow: var(--shadow); margin-bottom: 14px; }
+.planche img { width:100%; display:block; border-radius: 12px; }
+.planche span { display:block; font-weight:700; padding: 8px 6px 4px; }
+.grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; }
+.grid a { text-decoration:none; color: var(--navy); background:#fff; border-radius: 18px; padding: 8px; box-shadow: var(--shadow); transition: transform .15s; }
+.grid a:hover { transform: translateY(-2px); }
+.grid img { width:100%; display:block; border-radius: 12px; aspect-ratio: 390/844; object-fit: cover; background:#eee; }
+.grid b { display:block; font-size: 14px; margin: 8px 4px 0; line-height:1.3; }
+.grid i { font-style: normal; font-size: 12px; font-weight:700; color: var(--mag-d); margin: 0 4px 4px; display:block; }
+.grid i.sombre { color: #5b2be8; }
+
+</style></head><body><div class="wrap">
+<div class="top"><a class="back" href="./">‹ Accueil</a></div>
+<h1>Tous les écrans</h1><p class="sub">Touche une image pour l'ouvrir en grand (puis la télécharger).</p>
+<h2>Planches générales</h2>
+<a class="planche" href="maquette/planche-clair.png" target="_blank"><img loading="lazy" src="maquette/planche-clair.png" alt="Planche thème clair"><span>Thème clair</span></a>
+<a class="planche" href="maquette/planche-sombre.png" target="_blank"><img loading="lazy" src="maquette/planche-sombre.png" alt="Planche thème sombre"><span>Thème sombre</span></a>
+<h2>Écran par écran (16)</h2>
+<div class="grid"><a href="maquette/ecrans/01-ouverture-clair.png" target="_blank"><img loading="lazy" src="maquette/ecrans/01-ouverture-clair.png" alt="Ouverture"><b>Ouverture</b><i class="clair">Thème clair</i></a>
+<a href="maquette/ecrans/02-accueil-clair.png" target="_blank"><img loading="lazy" src="maquette/ecrans/02-accueil-clair.png" alt="Accueil"><b>Accueil</b><i class="clair">Thème clair</i></a>
+<a href="maquette/ecrans/02-accueil-sombre.png" target="_blank"><img loading="lazy" src="maquette/ecrans/02-accueil-sombre.png" alt="Accueil"><b>Accueil</b><i class="sombre">Thème sombre</i></a>
+<a href="maquette/ecrans/03-jeux-clair.png" target="_blank"><img loading="lazy" src="maquette/ecrans/03-jeux-clair.png" alt="Jeux"><b>Jeux</b><i class="clair">Thème clair</i></a>
+<a href="maquette/ecrans/03-jeux-sombre.png" target="_blank"><img loading="lazy" src="maquette/ecrans/03-jeux-sombre.png" alt="Jeux"><b>Jeux</b><i class="sombre">Thème sombre</i></a>
+<a href="maquette/ecrans/04-fiche-jeu-clair.png" target="_blank"><img loading="lazy" src="maquette/ecrans/04-fiche-jeu-clair.png" alt="Fiche d&#x27;un jeu"><b>Fiche d&#x27;un jeu</b><i class="clair">Thème clair</i></a>
+<a href="maquette/ecrans/04-fiche-jeu-sombre.png" target="_blank"><img loading="lazy" src="maquette/ecrans/04-fiche-jeu-sombre.png" alt="Fiche d&#x27;un jeu"><b>Fiche d&#x27;un jeu</b><i class="sombre">Thème sombre</i></a>
+<a href="maquette/ecrans/05-ceremonie-clair.png" target="_blank"><img loading="lazy" src="maquette/ecrans/05-ceremonie-clair.png" alt="Cérémonie"><b>Cérémonie</b><i class="clair">Thème clair</i></a>
+<a href="maquette/ecrans/05b-ceremonie-menu-moment-clair.png" target="_blank"><img loading="lazy" src="maquette/ecrans/05b-ceremonie-menu-moment-clair.png" alt="Cérémonie · menu d&#x27;un moment"><b>Cérémonie · menu d&#x27;un moment</b><i class="clair">Thème clair</i></a>
+<a href="maquette/ecrans/06-musique-clair.png" target="_blank"><img loading="lazy" src="maquette/ecrans/06-musique-clair.png" alt="Musique"><b>Musique</b><i class="clair">Thème clair</i></a>
+<a href="maquette/ecrans/07-ambiance-clair.png" target="_blank"><img loading="lazy" src="maquette/ecrans/07-ambiance-clair.png" alt="Ambiance"><b>Ambiance</b><i class="clair">Thème clair</i></a>
+<a href="maquette/ecrans/08-reglages-clair.png" target="_blank"><img loading="lazy" src="maquette/ecrans/08-reglages-clair.png" alt="Réglages"><b>Réglages</b><i class="clair">Thème clair</i></a>
+<a href="maquette/ecrans/08-reglages-sombre.png" target="_blank"><img loading="lazy" src="maquette/ecrans/08-reglages-sombre.png" alt="Réglages"><b>Réglages</b><i class="sombre">Thème sombre</i></a>
+<a href="maquette/ecrans/08b-reglages-suite-clair.png" target="_blank"><img loading="lazy" src="maquette/ecrans/08b-reglages-suite-clair.png" alt="Réglages (suite)"><b>Réglages (suite)</b><i class="clair">Thème clair</i></a>
+<a href="maquette/ecrans/09-pass-clair.png" target="_blank"><img loading="lazy" src="maquette/ecrans/09-pass-clair.png" alt="Pass"><b>Pass</b><i class="clair">Thème clair</i></a>
+<a href="maquette/ecrans/09b-pass-paiement-clair.png" target="_blank"><img loading="lazy" src="maquette/ecrans/09b-pass-paiement-clair.png" alt="Pass · paiement"><b>Pass · paiement</b><i class="clair">Thème clair</i></a>
+</div>
+<p class="foot">Dernière mise à jour : 8 octobre 2026 à 11:34 (heure de Douala)<br>Lien privé : merci de ne pas le partager publiquement.</p></div></body></html>
